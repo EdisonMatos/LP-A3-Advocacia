@@ -7,11 +7,14 @@ import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
+import { useNavigate } from "react-router-dom";
 
 export default function FeaturesParagraphs({ modal }) {
+  const navigate = useNavigate();
+
   return (
     <>
-      <SectionArea id="service" className="">
+      <SectionArea id="service" className="squares">
         <SectionHeader
           className="text-center"
           miniTitle={content.texts.features.miniTag}
@@ -33,7 +36,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card1.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +67,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card2.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +98,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card3.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +129,101 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card4.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-corner-down-right"
+                    >
+                      <polyline points="15 10 20 15 15 20" />
+                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                    </svg>
+                  }
+                />
+              </MotionDivDownToUp>{" "}
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+                <IconButtonFeatureCard
+                  icon={content.texts.features.card5.icon}
+                  title={content.texts.features.card5.title}
+                  paragraph={content.texts.features.card5.subtitle}
+                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
+                />
+                <Button
+                  size="small"
+                  label={content.texts.features.card5.labelButton}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-corner-down-right"
+                    >
+                      <polyline points="15 10 20 15 15 20" />
+                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                    </svg>
+                  }
+                />
+              </MotionDivDownToUp>{" "}
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+                <IconButtonFeatureCard
+                  icon={content.texts.features.card6.icon}
+                  title={content.texts.features.card6.title}
+                  paragraph={content.texts.features.card6.subtitle}
+                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
+                />
+                <Button
+                  size="small"
+                  label={content.texts.features.card6.labelButton}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-corner-down-right"
+                    >
+                      <polyline points="15 10 20 15 15 20" />
+                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                    </svg>
+                  }
+                />
+              </MotionDivDownToUp>{" "}
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+                <IconButtonFeatureCard
+                  icon={content.texts.features.card7.icon}
+                  title={content.texts.features.card7.title}
+                  paragraph={content.texts.features.card7.subtitle}
+                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
+                />
+                <Button
+                  size="small"
+                  label={content.texts.features.card7.labelButton}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -145,96 +245,6 @@ export default function FeaturesParagraphs({ modal }) {
               </MotionDivDownToUp>{" "}
               {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
                 <IconButtonFeatureCard
-                  icon={content.texts.features.card5.icon}
-                  title={content.texts.features.card5.title}
-                  paragraph={content.texts.features.card5.subtitle}
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                <Button
-                  size="small"
-                  label="Saber Mais"
-                  buttonLink={content.texts.links.ctaWhatsapp}
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-corner-down-right"
-                    >
-                      <polyline points="15 10 20 15 15 20" />
-                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                    </svg>
-                  }
-                />
-              </MotionDivDownToUp>{" "} */}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
-                <IconButtonFeatureCard
-                  icon={content.texts.features.card6.icon}
-                  title={content.texts.features.card6.title}
-                  paragraph={content.texts.features.card6.subtitle}
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                <Button
-                  size="small"
-                  label="Saber Mais"
-                  buttonLink={content.texts.links.ctaWhatsapp}
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-corner-down-right"
-                    >
-                      <polyline points="15 10 20 15 15 20" />
-                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                    </svg>
-                  }
-                />
-              </MotionDivDownToUp>{" "} */}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
-                <IconButtonFeatureCard
-                  icon={content.texts.features.card7.icon}
-                  title={content.texts.features.card7.title}
-                  paragraph={content.texts.features.card7.subtitle}
-                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
-                />
-                <Button
-                  size="small"
-                  label="Saber Mais"
-                  buttonLink={content.texts.links.ctaWhatsapp}
-                  icon={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-corner-down-right"
-                    >
-                      <polyline points="15 10 20 15 15 20" />
-                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
-                    </svg>
-                  }
-                />
-              </MotionDivDownToUp>{" "} */}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
-                <IconButtonFeatureCard
                   icon={content.texts.features.card8.icon}
                   title={content.texts.features.card8.title}
                   paragraph={content.texts.features.card8.subtitle}
@@ -242,7 +252,7 @@ export default function FeaturesParagraphs({ modal }) {
                 />
                 <Button
                   size="small"
-                  label="Saber Mais"
+                  label={content.texts.features.card8.labelButton}"
                   buttonLink={content.texts.links.ctaWhatsapp}
                   icon={
                     <svg

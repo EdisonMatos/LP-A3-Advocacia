@@ -21,10 +21,10 @@ export default function Index() {
       <Hero appDownloadButtons={false} personImg={false} fundoImage={true} herodefault={true} />
 
       <Features
-        defaultFeature={true}
+        defaultFeature={false}
         button={false}
         modalWithCards={false}
-        paragraphs={false}
+        paragraphs={true}
         sixCards={false}
         paragraphsModal={false}
       />
@@ -46,6 +46,7 @@ export default function Index() {
         addres={true}
         phoneSecundario={true}
         phoneTerciario={true}
+        phoneFixo={true}
         emailSecundario={false}
         addresSecundario={false}
         instagram={false}

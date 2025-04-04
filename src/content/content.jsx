@@ -1,6 +1,6 @@
 import logo from "../assets/imgs/logo/logo.png";
 import heroImg from "../assets/imgs/hero/bgHero.jpg";
-import lawHero from "../assets/imgs/hero/lawHero.jpg"
+import lawHero from "../assets/imgs/hero/lawHero.jpg";
 // import heroImgPhone from "../assets/imgs/hero/lawHeroPhone.jpg";
 // import heroImgPerson from "../assets/imgs/hero/bgHero.jpg";
 import bgHeroImg from "../assets/imgs/hero/bgHero.webp";
@@ -70,6 +70,11 @@ export const infos = {
     ddd: "61",
     firstPart: "98454", // Apenas os 5 primeiros números (incluindo o 9)
     secondPart: "7341", // Apenas os 4 últimos números
+  },
+  phoneFixo: {
+    ddd: "61",
+    firstPart: "3274", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "4265", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -189,6 +194,7 @@ const content = {
         img: featuresImg1,
         title: "Trabalhista e Previdenciário",
         subtitle: "Defesa de direitos no trabalho e benefícios do INSS.",
+        labelButton: "Saber Mais",
         description: (
           <div>
             A_Definir
@@ -201,8 +207,8 @@ const content = {
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="42"
+            height="42"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -222,44 +228,10 @@ const content = {
         buttonLabel: "Saiba Mais",
       },
       card2: {
-        img: featuresImg2,
-        title: "Família e Sucessões",
-        subtitle: "Divórcios, inventários e proteção dos direitos familiares.",
-        description: (
-          <div>
-            A_Definir
-            <br />
-            <br />
-            A_Definir
-          </div>
-        ),
-        imgModal: imgFeaturesCardModal2,
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-users-icon lucide-users"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-          </svg>
-        ),
-        buttonLabelModal: "Fale Conosco",
-        buttonLabel: "Saiba Mais",
-      },
-      card3: {
         img: featuresImg3,
         title: "Direito Cível",
         subtitle: "Contratos, indenizações e solução de conflitos civis.",
+        labelButton: "Saber Mais",
         description: (
           <div>
             A_Definir <br />
@@ -271,8 +243,8 @@ const content = {
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="42"
+            height="42"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -291,11 +263,11 @@ const content = {
         buttonLabelModal: "Fale Conosco",
         buttonLabel: "Saiba Mais",
       },
-      card4: {
+      card3: {
         img: featuresImg4,
-        title: "Criminal e Penal Militar",
-        subtitle:
-          "A_DefiDefesa em crimes comuns e militares com estratégia jurídica.nir",
+        title: "Direito Empresarial",
+        subtitle: "Orientação jurídica para empresas e contratos",
+        labelButton: "Saber Mais",
         description: (
           <div>
             A_Definir
@@ -308,8 +280,8 @@ const content = {
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
+            width="42"
+            height="42"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -319,6 +291,160 @@ const content = {
             class="lucide lucide-shield-icon lucide-shield"
           >
             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+          </svg>
+        ),
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
+      },
+      card4: {
+        img: featuresImg2,
+        title: "Família e Sucessões",
+        subtitle: "Divórcios, inventários e proteção dos direitos familiares.",
+        labelButton: "Saber Mais",
+        description: (
+          <div>
+            A_Definir
+            <br />
+            <br />
+            A_Definir
+          </div>
+        ),
+        imgModal: imgFeaturesCardModal2,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-users-icon lucide-users"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+          </svg>
+        ),
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
+      },
+      card5: {
+        img: featuresImg2,
+        title: "Direito Criminal",
+        subtitle: "Defesa em investigações e ações criminais",
+        labelButton: "Saber Mais",
+        description: (
+          <div>
+            A_Definir
+            <br />
+            <br />
+            A_Definir
+          </div>
+        ),
+        imgModal: imgFeaturesCardModal2,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-fingerprint-icon lucide-fingerprint"
+          >
+            <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+            <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+            <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+            <path d="M2 12a10 10 0 0 1 18-6" />
+            <path d="M2 16h.01" />
+            <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+            <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+            <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+            <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+          </svg>
+        ),
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
+      },
+      card6: {
+        img: featuresImg2,
+        title: "Penal Militar",
+        subtitle: "Atuação em crimes militares e defesa de praças",
+        labelButton: "Saber Mais",
+        description: (
+          <div>
+            A_Definir
+            <br />
+            <br />
+            A_Definir
+          </div>
+        ),
+        imgModal: imgFeaturesCardModal2,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-swords-icon lucide-swords"
+          >
+            <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+            <line x1="13" x2="19" y1="19" y2="13" />
+            <line x1="16" x2="20" y1="16" y2="20" />
+            <line x1="19" x2="21" y1="21" y2="19" />
+            <polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5" />
+            <line x1="5" x2="9" y1="14" y2="18" />
+            <line x1="7" x2="4" y1="17" y2="20" />
+            <line x1="3" x2="5" y1="19" y2="21" />
+          </svg>
+        ),
+        buttonLabelModal: "Fale Conosco",
+        buttonLabel: "Saiba Mais",
+      },
+      card7: {
+        img: featuresImg2,
+        title: "Direito Médico",
+        subtitle: "Defesa jurídica em erros médicos e processos éticos",
+        labelButton: "Saber Mais",
+        description: (
+          <div>
+            A_Definir
+            <br />
+            <br />
+            A_Definir
+          </div>
+        ),
+        imgModal: imgFeaturesCardModal2,
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-stethoscope-icon lucide-stethoscope"
+          >
+            <path d="M11 2v2" />
+            <path d="M5 2v2" />
+            <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" />
+            <path d="M8 15a6 6 0 0 0 12 0v-3" />
+            <circle cx="20" cy="10" r="2" />
           </svg>
         ),
         buttonLabelModal: "Fale Conosco",
@@ -829,15 +955,18 @@ const content = {
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
+      phoneFixo: `https://wa.me/+55${infos.phoneFixo.ddd}${infos.phoneFixo.firstPart}${infos.phoneFixo.secondPart}?text=${infos.whatsappDefaultMessage}`,
       facebook: `https://www.facebook.com/${infos.facebookProfile}`,
       x: `https://x.com/${infos.x}`,
       linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
     },
 
     infos: {
-      phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
-      phoneSecundario: `(${infos.phoneSecundario.ddd}) ${infos.phoneSecundario.firstPart}-${infos.phoneSecundario.secondPart}`,
-      phoneTerciario: `(${infos.phoneTerciario.ddd}) ${infos.phoneTerciario.firstPart}-${infos.phoneTerciario.secondPart}`,
+      phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart} - Dra. Sheila Cavalcanti `,
+      phoneSecundario: `(${infos.phoneSecundario.ddd}) ${infos.phoneSecundario.firstPart}-${infos.phoneSecundario.secondPart} - Dra. Viviane Moura`,
+      phoneTerciario: `(${infos.phoneTerciario.ddd}) ${infos.phoneTerciario.firstPart}-${infos.phoneTerciario.secondPart} - Dra. Thirsa César`,
+      phoneFixo: `(${infos.phoneFixo.ddd}) ${infos.phoneFixo.firstPart}-${infos.phoneFixo.secondPart} - Fixo`,
+
       email: `${infos.email}@${infos.domain}`,
       emailSecundario: `${infos.emailSecundario}`,
       adress: infos.endereco,
