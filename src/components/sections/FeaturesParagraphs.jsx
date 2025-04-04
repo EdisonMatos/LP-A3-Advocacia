@@ -7,8 +7,11 @@ import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
+import { useNavigate } from "react-router-dom";
 
 export default function FeaturesParagraphs({ modal }) {
+  const navigate = useNavigate();
+
   return (
     <>
       <SectionArea id="service" className="">
@@ -33,7 +36,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card1.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +67,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card2.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +98,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card3.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +129,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card4.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +160,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card5.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +191,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card6.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +222,8 @@ export default function FeaturesParagraphs({ modal }) {
                 <Button
                   size="small"
                   label={content.texts.features.card7.labelButton}
-                  buttonLink={content.texts.links.ctaWhatsapp}
+                  // buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => navigate("/whatsapp")}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
