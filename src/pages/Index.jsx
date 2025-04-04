@@ -46,6 +46,7 @@ export default function Index() {
         addres={true}
         phoneSecundario={true}
         phoneTerciario={true}
+        phoneFixo={true}
         emailSecundario={false}
         addresSecundario={false}
         instagram={false}

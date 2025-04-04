@@ -1,6 +1,6 @@
 import logo from "../assets/imgs/logo/logo.png";
 import heroImg from "../assets/imgs/hero/bgHero.jpg";
-import lawHero from "../assets/imgs/hero/lawHero.jpg"
+import lawHero from "../assets/imgs/hero/lawHero.jpg";
 // import heroImgPhone from "../assets/imgs/hero/lawHeroPhone.jpg";
 // import heroImgPerson from "../assets/imgs/hero/bgHero.jpg";
 import bgHeroImg from "../assets/imgs/hero/bgHero.webp";
@@ -70,6 +70,11 @@ export const infos = {
     ddd: "61",
     firstPart: "98454", // Apenas os 5 primeiros números (incluindo o 9)
     secondPart: "7341", // Apenas os 4 últimos números
+  },
+  phoneFixo: {
+    ddd: "61",
+    firstPart: "3274", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "4265", // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -829,15 +834,18 @@ const content = {
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
+      phoneFixo: `https://wa.me/+55${infos.phoneFixo.ddd}${infos.phoneFixo.firstPart}${infos.phoneFixo.secondPart}?text=${infos.whatsappDefaultMessage}`,
       facebook: `https://www.facebook.com/${infos.facebookProfile}`,
       x: `https://x.com/${infos.x}`,
       linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
     },
 
     infos: {
-      phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
-      phoneSecundario: `(${infos.phoneSecundario.ddd}) ${infos.phoneSecundario.firstPart}-${infos.phoneSecundario.secondPart}`,
-      phoneTerciario: `(${infos.phoneTerciario.ddd}) ${infos.phoneTerciario.firstPart}-${infos.phoneTerciario.secondPart}`,
+      phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart} - Dra. Sheila Cavalcanti `,
+      phoneSecundario: `(${infos.phoneSecundario.ddd}) ${infos.phoneSecundario.firstPart}-${infos.phoneSecundario.secondPart} - Dra. Viviane Moura`,
+      phoneTerciario: `(${infos.phoneTerciario.ddd}) ${infos.phoneTerciario.firstPart}-${infos.phoneTerciario.secondPart} - Dra. Thirsa César`,
+      phoneFixo: `(${infos.phoneFixo.ddd}) ${infos.phoneFixo.firstPart}-${infos.phoneFixo.secondPart} - Fixo`,
+
       email: `${infos.email}@${infos.domain}`,
       emailSecundario: `${infos.emailSecundario}`,
       adress: infos.endereco,
